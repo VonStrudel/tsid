@@ -134,7 +134,7 @@ namespace tsid
                                          double tolerance,
                                          double * nullSpaceBasisMatrix,
                                          int &rows, int &cols);
-    
+
     void nullSpaceBasisFromDecomposition(const Eigen::JacobiSVD<Eigen::MatrixXd> & svdDecomposition,
                                          int rank,
                                          double * nullSpaceBasisMatrix,
@@ -161,7 +161,7 @@ namespace tsid
     {
       typedef typename Matrix::Index Index;
       typedef typename Matrix::Scalar Scalar;
-      
+
       std::ofstream out(filename.c_str(), std::ios::out | std::ios::binary | std::ios::trunc);
       if(!out.is_open())
         return false;
@@ -182,16 +182,16 @@ namespace tsid
     {
       typedef typename Matrix::Index Index;
       typedef typename Matrix::Scalar Scalar;
-      
+
       std::ifstream in(filename.c_str(), std::ios::in | std::ios::binary);
       if(!in.is_open())
         return false;
       Index rows=0, cols=0;
       in.read((char*) (&rows),sizeof(Index));
       in.read((char*) (&cols),sizeof(Index));
-      
+
       Eigen::MatrixBase<Matrix> & matrix_ = const_cast< Eigen::MatrixBase<Matrix>& >(matrix);
-      
+
       matrix_.resize(rows, cols);
       in.read( (char *) matrix_.data() , rows*cols*sizeof(Scalar) );
       in.close();

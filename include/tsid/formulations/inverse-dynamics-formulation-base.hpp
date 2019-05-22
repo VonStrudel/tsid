@@ -111,7 +111,7 @@ namespace tsid
                             double transition_duration=0.0) = 0;
 
     virtual bool removeRigidContact(const std::string & contactName,
-                                    double transition_duration=0.0) = 0;
+      double transition_duration=0.0) = 0;
 
     virtual const HQPData & computeProblemData(double time,
                                                ConstRefVector q,
