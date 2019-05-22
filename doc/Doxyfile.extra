@@ -1,0 +1,4 @@
+INPUT                  = /opt/openrobots/src/tsid/include
+IMAGE_PATH             = /opt/openrobots/src/tsid/doc/pictures
+FILE_PATTERNS          = *.h *.idl
+

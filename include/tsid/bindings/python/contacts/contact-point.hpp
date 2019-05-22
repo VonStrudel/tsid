@@ -1,0 +1,1 @@
+/opt/openrobots/src/tsid/bindings/python/contacts/contact-point.hpp

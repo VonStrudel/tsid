@@ -28,7 +28,7 @@ namespace tsid
 {
   namespace tasks
   {
-    
+
     ///
     /// \brief Base template of a Task.
     /// Each class is defined according to a constant model of a robot.
@@ -37,7 +37,7 @@ namespace tsid
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW
-      
+
       typedef math::ConstraintBase ConstraintBase;
       typedef math::ConstRefVector ConstRefVector;
       typedef pinocchio::Data Data;
@@ -49,7 +49,7 @@ namespace tsid
       const std::string & name() const;
 
       void name(const std::string & name);
-      
+
       /// \brief Return the dimension of the task.
       /// \info should be overloaded in the child class.
       virtual int dim() const = 0;
@@ -60,14 +60,14 @@ namespace tsid
                                              const Data & data) = 0;
 
       virtual const ConstraintBase & getConstraint() const = 0;
-      
+
     protected:
       std::string m_name;
-      
+
       /// \brief Reference on the robot model.
       RobotWrapper & m_robot;
     };
-    
+
   }
 }
 

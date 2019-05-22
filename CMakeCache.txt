@@ -14,6 +14,51 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a file.
+ARCHLINUX_FOUND:FILEPATH=ARCHLINUX_FOUND-NOTFOUND
+
+//Build the python binding
+BUILD_PYTHON_INTERFACE:BOOL=ON
+
+//Build the unitary tests
+BUILD_UNIT_TESTS:BOOL=ON
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=Boost_DIR-NOTFOUND
+
+//Boost filesystem library (debug)
+Boost_FILESYSTEM_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+
+//Boost filesystem library (release)
+Boost_FILESYSTEM_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+//Boost library directory DEBUG
+Boost_LIBRARY_DIR_DEBUG:PATH=/usr/lib/x86_64-linux-gnu
+
+//Boost library directory RELEASE
+Boost_LIBRARY_DIR_RELEASE:PATH=/usr/lib/x86_64-linux-gnu
+
+//Boost python library (debug)
+Boost_PYTHON_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_python.so
+
+//Boost python library (release)
+Boost_PYTHON_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_python.so
+
+//Boost system library (debug)
+Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_system.so
+
+//Boost system library (release)
+Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_system.so
+
+//Boost unit_test_framework library (debug)
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so
+
+//Boost unit_test_framework library (release)
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -80,8 +125,53 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
+//user executables (bin)
+CMAKE_INSTALL_BINDIR:PATH=bin
+
+//read-only architecture-independent data (DATAROOTDIR)
+CMAKE_INSTALL_DATADIR:PATH=
+
+//read-only architecture-independent data root (share)
+CMAKE_INSTALL_DATAROOTDIR:PATH=share
+
+//documentation root (DATAROOTDIR/doc/PROJECT_NAME)
+CMAKE_INSTALL_DOCDIR:PATH=
+
+//C header files (include)
+CMAKE_INSTALL_INCLUDEDIR:PATH=include
+
+//info documentation (DATAROOTDIR/info)
+CMAKE_INSTALL_INFODIR:PATH=
+
+//object code libraries (lib)
+CMAKE_INSTALL_LIBDIR:PATH=lib
+
+//program executables (libexec)
+CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
+
+//locale-dependent data (DATAROOTDIR/locale)
+CMAKE_INSTALL_LOCALEDIR:PATH=
+
+//modifiable single-machine data (var)
+CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
+
+//man documentation (DATAROOTDIR/man)
+CMAKE_INSTALL_MANDIR:PATH=
+
+//C header files for non-gcc (/usr/include)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
+
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/openrobots
+CMAKE_INSTALL_PREFIX:PATH=/opt/openrobots
+
+//system admin executables (sbin)
+CMAKE_INSTALL_SBINDIR:PATH=sbin
+
+//modifiable architecture-independent data (com)
+CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
+
+//read-only single-machine data (etc)
+CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
@@ -114,7 +204,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=tsid
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -165,8 +255,59 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a file.
+DEBIAN_FOUND:FILEPATH=/etc/debian_version
+
+//MAKEFLAGS used for distcheck's make
+DISTCHECK_MAKEFLAGS:PATH=
+
+//Graphviz Dot tool for using Doxygen
+DOXYGEN_DOT_EXECUTABLE:FILEPATH=/usr/bin/dot
+
+//Doxygen documentation generation tool (http://www.doxygen.org)
+DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
+
+//If ON, it forbids automatic resizing of dynamics arrays and matrices
+EIGEN_NO_AUTOMATIC_RESIZING:BOOL=OFF
+
+//If ON, it can assert in case of runtime allocation
+EIGEN_RUNTIME_NO_MALLOC:BOOL=ON
+
+//Path to a program.
+GIT:FILEPATH=/usr/bin/git
+
+//Path to a program.
+GPG:FILEPATH=/usr/bin/gpg
+
+//Name of the computer/site where compile is being run
+HOSTNAME:STRING=cagnotte
+
+//Initialize Eigen entries with NaN
+INITIALIZE_WITH_NAN:BOOL=OFF
+
 //Generate and install the documentation
 INSTALL_DOCUMENTATION:BOOL=OFF
+
+//Path to a file.
+NETBSD_FOUND:FILEPATH=NETBSD_FOUND-NOTFOUND
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
+//Enable Debian-style Python package layout
+PYTHON_DEB_LAYOUT:BOOL=OFF
+
+//Path to a program.
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
+
+//Path to a file.
+PYTHON_INCLUDE_DIR:PATH=/usr/include/python2.7
+
+//Path to a library.
+PYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython2.7.so
+
+//Path to a library.
+PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/opt/openrobots/src/tsid
@@ -174,11 +315,53 @@ Project_BINARY_DIR:STATIC=/opt/openrobots/src/tsid
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/opt/openrobots/src/tsid
 
+//Path to a program.
+SED:FILEPATH=/bin/sed
+
+//Path to a program.
+TAR:FILEPATH=/bin/tar
+
+//Value Computed by CMake
+tsid_BINARY_DIR:STATIC=/opt/openrobots/src/tsid
+
+//Dependencies for the target
+tsid_LIB_DEPENDS:STATIC=general;-L/opt/openrobots/lib;general;-L/usr/local/lib;general;-Wl,-rpath,/opt/openrobots/lib;general;-lpinocchio;general;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;general;-lboost_filesystem;general;-lboost_serialization;general;-lboost_system;general;-lurdfdom_sensor;general;-lurdfdom_model_state;general;-lurdfdom_model;general;-lurdfdom_world;general;-lconsole_bridge;general;-Wl,-rpath,/opt/openrobots/lib;general;-lhpp-fcl;general;-lboost_thread;general;-lboost_date_time;general;-lboost_filesystem;general;-lboost_system;general;-loctomap;general;-loctomath;general;-lassimp;general;-Wl,-rpath,/opt/openrobots/lib;general;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;general;-Wl,-rpath,/opt/openrobots/lib;
+
+//Value Computed by CMake
+tsid_SOURCE_DIR:STATIC=/opt/openrobots/src/tsid
+
+//Dependencies for the target
+tsid_pywrap_LIB_DEPENDS:STATIC=general;-L/opt/openrobots/lib;general;-Wl,-rpath,/opt/openrobots/lib;general;-leigenpy;general;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;general;-lboost_python-py27;general;-Wl,-rpath,/opt/openrobots/lib;general;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;general;-L/opt/openrobots/lib;general;-L/usr/local/lib;general;-Wl,-rpath,/opt/openrobots/lib;general;-lpinocchio;general;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;general;-lboost_filesystem;general;-lboost_serialization;general;-lboost_system;general;-lurdfdom_sensor;general;-lurdfdom_model_state;general;-lurdfdom_model;general;-lurdfdom_world;general;-lconsole_bridge;general;-Wl,-rpath,/opt/openrobots/lib;general;-lhpp-fcl;general;-lboost_thread;general;-lboost_date_time;general;-lboost_filesystem;general;-lboost_system;general;-loctomap;general;-loctomath;general;-lassimp;general;-Wl,-rpath,/opt/openrobots/lib;general;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;general;-Wl,-rpath,/opt/openrobots/lib;general;tsid;general;/usr/lib/x86_64-linux-gnu/libboost_python.so;
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_FILESYSTEM_LIBRARY_DEBUG
+Boost_FILESYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_FILESYSTEM_LIBRARY_RELEASE
+Boost_FILESYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_INCLUDE_DIR
+Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR_DEBUG
+Boost_LIBRARY_DIR_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR_RELEASE
+Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_PYTHON_LIBRARY_DEBUG
+Boost_PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_PYTHON_LIBRARY_RELEASE
+Boost_PYTHON_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
+Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
+Boost_SYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -246,8 +429,38 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/opt/openrobots/src/tsid
+//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
+CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
+CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
+CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
+CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
+CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
+CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
+CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
+CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
+CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
+CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
+CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
+CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
+CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
+CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
+CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
@@ -265,7 +478,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -304,4 +517,195 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
+DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_EXECUTABLE
+DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+EIGEN3_CFLAGS:INTERNAL=-I/opt/openrobots/include/eigen3
+EIGEN3_CFLAGS_I:INTERNAL=
+EIGEN3_CFLAGS_OTHER:INTERNAL=
+EIGEN3_FOUND:INTERNAL=1
+EIGEN3_INCLUDEDIR:INTERNAL=
+EIGEN3_INCLUDE_DIRS:INTERNAL=/opt/openrobots/include/eigen3
+EIGEN3_LDFLAGS:INTERNAL=
+EIGEN3_LDFLAGS_OTHER:INTERNAL=
+EIGEN3_LIBDIR:INTERNAL=
+EIGEN3_LIBRARIES:INTERNAL=
+EIGEN3_LIBRARY_DIRS:INTERNAL=
+EIGEN3_LIBS:INTERNAL=
+EIGEN3_LIBS_L:INTERNAL=
+EIGEN3_LIBS_OTHER:INTERNAL=
+EIGEN3_LIBS_PATHS:INTERNAL=
+EIGEN3_PREFIX:INTERNAL=
+EIGEN3_STATIC_CFLAGS:INTERNAL=-I/opt/openrobots/include/eigen3
+EIGEN3_STATIC_CFLAGS_I:INTERNAL=
+EIGEN3_STATIC_CFLAGS_OTHER:INTERNAL=
+EIGEN3_STATIC_INCLUDE_DIRS:INTERNAL=/opt/openrobots/include/eigen3
+EIGEN3_STATIC_LDFLAGS:INTERNAL=
+EIGEN3_STATIC_LDFLAGS_OTHER:INTERNAL=
+EIGEN3_STATIC_LIBDIR:INTERNAL=
+EIGEN3_STATIC_LIBRARIES:INTERNAL=
+EIGEN3_STATIC_LIBRARY_DIRS:INTERNAL=
+EIGEN3_STATIC_LIBS:INTERNAL=
+EIGEN3_STATIC_LIBS_L:INTERNAL=
+EIGEN3_STATIC_LIBS_OTHER:INTERNAL=
+EIGEN3_STATIC_LIBS_PATHS:INTERNAL=
+EIGEN3_VERSION:INTERNAL=3.2.4
+EIGEN3_eigen3 _INCLUDEDIR:INTERNAL=
+EIGEN3_eigen3 _LIBDIR:INTERNAL=
+EIGEN3_eigen3 _PREFIX:INTERNAL=
+EIGEN3_eigen3 _VERSION:INTERNAL=
+EIGENPY_CFLAGS:INTERNAL=-isystem/usr/include/python2.7;-isystem/usr/lib/python2.7/dist-packages/numpy/core/include;-I/opt/openrobots/include;-I/opt/openrobots/include/eigen3
+EIGENPY_CFLAGS_I:INTERNAL=
+EIGENPY_CFLAGS_OTHER:INTERNAL=-isystem/usr/include/python2.7;-isystem/usr/lib/python2.7/dist-packages/numpy/core/include
+EIGENPY_FOUND:INTERNAL=1
+EIGENPY_INCLUDEDIR:INTERNAL=/opt/openrobots/include
+EIGENPY_INCLUDE_DIRS:INTERNAL=/opt/openrobots/include;/opt/openrobots/include/eigen3
+EIGENPY_LDFLAGS:INTERNAL=-L/opt/openrobots/lib;-Wl,-rpath,/opt/openrobots/lib;-leigenpy;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;-lboost_python-py27
+EIGENPY_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/opt/openrobots/lib;-Wl,-rpath,/usr/lib/x86_64-linux-gnu
+EIGENPY_LIBDIR:INTERNAL=/opt/openrobots/lib
+EIGENPY_LIBRARIES:INTERNAL=eigenpy;boost_python-py27
+EIGENPY_LIBRARY_DIRS:INTERNAL=/opt/openrobots/lib
+EIGENPY_LIBS:INTERNAL=
+EIGENPY_LIBS_L:INTERNAL=
+EIGENPY_LIBS_OTHER:INTERNAL=
+EIGENPY_LIBS_PATHS:INTERNAL=
+EIGENPY_PREFIX:INTERNAL=/opt/openrobots
+EIGENPY_STATIC_CFLAGS:INTERNAL=-isystem/usr/include/python2.7;-isystem/usr/lib/python2.7/dist-packages/numpy/core/include;-I/opt/openrobots/include;-I/opt/openrobots/include/eigen3
+EIGENPY_STATIC_CFLAGS_I:INTERNAL=
+EIGENPY_STATIC_CFLAGS_OTHER:INTERNAL=-isystem/usr/include/python2.7;-isystem/usr/lib/python2.7/dist-packages/numpy/core/include
+EIGENPY_STATIC_INCLUDE_DIRS:INTERNAL=/opt/openrobots/include;/opt/openrobots/include/eigen3
+EIGENPY_STATIC_LDFLAGS:INTERNAL=-L/opt/openrobots/lib;-Wl,-rpath,/opt/openrobots/lib;-leigenpy;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;-lboost_python-py27
+EIGENPY_STATIC_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/opt/openrobots/lib;-Wl,-rpath,/usr/lib/x86_64-linux-gnu
+EIGENPY_STATIC_LIBDIR:INTERNAL=
+EIGENPY_STATIC_LIBRARIES:INTERNAL=eigenpy;boost_python-py27
+EIGENPY_STATIC_LIBRARY_DIRS:INTERNAL=/opt/openrobots/lib
+EIGENPY_STATIC_LIBS:INTERNAL=
+EIGENPY_STATIC_LIBS_L:INTERNAL=
+EIGENPY_STATIC_LIBS_OTHER:INTERNAL=
+EIGENPY_STATIC_LIBS_PATHS:INTERNAL=
+EIGENPY_VERSION:INTERNAL=1.5.1
+EIGENPY_eigenpy _INCLUDEDIR:INTERNAL=
+EIGENPY_eigenpy _LIBDIR:INTERNAL=
+EIGENPY_eigenpy _PREFIX:INTERNAL=
+EIGENPY_eigenpy _VERSION:INTERNAL=
+//Details about finding Doxygen
+FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][v1.8.11()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
+//Details about finding PythonInterp
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.12()]
+//Details about finding PythonLibs
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython2.7.so][/usr/include/python2.7][v2.7.12()]
+PINOCCHIO_CFLAGS:INTERNAL=-DPINOCCHIO_URDFDOM_TYPEDEF_SHARED_PTR;-DPINOCCHIO_WITH_URDFDOM;-DPINOCCHIO_WITH_HPP_FCL;-DFCL_USE_ASSIMP_UNIFIED_HEADER_NAMES;-DHPP_FCL_USE_ASSIMP_UNIFIED_HEADER_NAMES;-DHPP_FCL_HAVE_OCTOMAP;-DFCL_HAVE_OCTOMAP;-DOCTOMAP_MAJOR_VERSION=1;-DOCTOMAP_MINOR_VERSION=9;-DOCTOMAP_PATCH_VERSION=0;-I/opt/openrobots/include;-I/opt/openrobots/include/eigen3;-I/opt/openrobots/include;-I/usr/local/include;-I/usr/include/assimp
+PINOCCHIO_CFLAGS_I:INTERNAL=
+PINOCCHIO_CFLAGS_OTHER:INTERNAL=-DPINOCCHIO_URDFDOM_TYPEDEF_SHARED_PTR;-DPINOCCHIO_WITH_URDFDOM;-DPINOCCHIO_WITH_HPP_FCL;-DFCL_USE_ASSIMP_UNIFIED_HEADER_NAMES;-DHPP_FCL_USE_ASSIMP_UNIFIED_HEADER_NAMES;-DHPP_FCL_HAVE_OCTOMAP;-DFCL_HAVE_OCTOMAP;-DOCTOMAP_MAJOR_VERSION=1;-DOCTOMAP_MINOR_VERSION=9;-DOCTOMAP_PATCH_VERSION=0
+PINOCCHIO_FOUND:INTERNAL=1
+PINOCCHIO_INCLUDEDIR:INTERNAL=/opt/openrobots/include
+PINOCCHIO_INCLUDE_DIRS:INTERNAL=/opt/openrobots/include;/opt/openrobots/include/eigen3;/opt/openrobots/include;/usr/local/include;/usr/include/assimp
+PINOCCHIO_LDFLAGS:INTERNAL=-L/opt/openrobots/lib;-L/usr/local/lib;-Wl,-rpath,/opt/openrobots/lib;-lpinocchio;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;-lboost_filesystem;-lboost_serialization;-lboost_system;-lurdfdom_sensor;-lurdfdom_model_state;-lurdfdom_model;-lurdfdom_world;-lconsole_bridge;-Wl,-rpath,/opt/openrobots/lib;-lhpp-fcl;-lboost_thread;-lboost_date_time;-lboost_filesystem;-lboost_system;-loctomap;-loctomath;-lassimp
+PINOCCHIO_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/opt/openrobots/lib;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;-Wl,-rpath,/opt/openrobots/lib
+PINOCCHIO_LIBDIR:INTERNAL=/opt/openrobots/lib
+PINOCCHIO_LIBRARIES:INTERNAL=pinocchio;boost_filesystem;boost_serialization;boost_system;urdfdom_sensor;urdfdom_model_state;urdfdom_model;urdfdom_world;console_bridge;hpp-fcl;boost_thread;boost_date_time;boost_filesystem;boost_system;octomap;octomath;assimp
+PINOCCHIO_LIBRARY_DIRS:INTERNAL=/opt/openrobots/lib;/usr/local/lib
+PINOCCHIO_LIBS:INTERNAL=
+PINOCCHIO_LIBS_L:INTERNAL=
+PINOCCHIO_LIBS_OTHER:INTERNAL=
+PINOCCHIO_LIBS_PATHS:INTERNAL=
+PINOCCHIO_PREFIX:INTERNAL=/opt/openrobots
+PINOCCHIO_STATIC_CFLAGS:INTERNAL=-DPINOCCHIO_URDFDOM_TYPEDEF_SHARED_PTR;-DPINOCCHIO_WITH_URDFDOM;-DPINOCCHIO_WITH_HPP_FCL;-DFCL_USE_ASSIMP_UNIFIED_HEADER_NAMES;-DHPP_FCL_USE_ASSIMP_UNIFIED_HEADER_NAMES;-DHPP_FCL_HAVE_OCTOMAP;-DFCL_HAVE_OCTOMAP;-DOCTOMAP_MAJOR_VERSION=1;-DOCTOMAP_MINOR_VERSION=9;-DOCTOMAP_PATCH_VERSION=0;-I/opt/openrobots/include;-I/opt/openrobots/include/eigen3;-I/opt/openrobots/include;-I/usr/local/include;-I/usr/include/assimp
+PINOCCHIO_STATIC_CFLAGS_I:INTERNAL=
+PINOCCHIO_STATIC_CFLAGS_OTHER:INTERNAL=-DPINOCCHIO_URDFDOM_TYPEDEF_SHARED_PTR;-DPINOCCHIO_WITH_URDFDOM;-DPINOCCHIO_WITH_HPP_FCL;-DFCL_USE_ASSIMP_UNIFIED_HEADER_NAMES;-DHPP_FCL_USE_ASSIMP_UNIFIED_HEADER_NAMES;-DHPP_FCL_HAVE_OCTOMAP;-DFCL_HAVE_OCTOMAP;-DOCTOMAP_MAJOR_VERSION=1;-DOCTOMAP_MINOR_VERSION=9;-DOCTOMAP_PATCH_VERSION=0
+PINOCCHIO_STATIC_INCLUDE_DIRS:INTERNAL=/opt/openrobots/include;/opt/openrobots/include/eigen3;/opt/openrobots/include;/usr/local/include;/usr/include/assimp
+PINOCCHIO_STATIC_LDFLAGS:INTERNAL=-L/opt/openrobots/lib;-L/usr/local/lib;-Wl,-rpath,/opt/openrobots/lib;-lpinocchio;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;-lboost_filesystem;-lboost_serialization;-lboost_system;-lurdfdom_sensor;-lurdfdom_model_state;-lurdfdom_model;-lurdfdom_world;-lconsole_bridge;-Wl,-rpath,/opt/openrobots/lib;-lhpp-fcl;-lboost_thread;-lboost_date_time;-lboost_filesystem;-lboost_system;-loctomap;-loctomath;-lassimp;-lstdc++;-lz
+PINOCCHIO_STATIC_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/opt/openrobots/lib;-Wl,-rpath,/usr/lib/x86_64-linux-gnu;-Wl,-rpath,/opt/openrobots/lib
+PINOCCHIO_STATIC_LIBDIR:INTERNAL=
+PINOCCHIO_STATIC_LIBRARIES:INTERNAL=pinocchio;boost_filesystem;boost_serialization;boost_system;urdfdom_sensor;urdfdom_model_state;urdfdom_model;urdfdom_world;console_bridge;hpp-fcl;boost_thread;boost_date_time;boost_filesystem;boost_system;octomap;octomath;assimp;stdc++;z
+PINOCCHIO_STATIC_LIBRARY_DIRS:INTERNAL=/opt/openrobots/lib;/usr/local/lib
+PINOCCHIO_STATIC_LIBS:INTERNAL=
+PINOCCHIO_STATIC_LIBS_L:INTERNAL=
+PINOCCHIO_STATIC_LIBS_OTHER:INTERNAL=
+PINOCCHIO_STATIC_LIBS_PATHS:INTERNAL=
+PINOCCHIO_VERSION:INTERNAL=2.1.2
+PINOCCHIO_pinocchio _INCLUDEDIR:INTERNAL=
+PINOCCHIO_pinocchio _LIBDIR:INTERNAL=
+PINOCCHIO_pinocchio _PREFIX:INTERNAL=
+PINOCCHIO_pinocchio _VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_EXECUTABLE
+PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_INCLUDE_DIR
+PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY
+PYTHON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
+PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//Test R-Wall
+R-Wall:INTERNAL=1
+//Test R-Wcast-align
+R-Wcast-align:INTERNAL=1
+//Test R-Wcast-qual
+R-Wcast-qual:INTERNAL=1
+//Test R-Wconversion
+R-Wconversion:INTERNAL=1
+//Test R-Wextra
+R-Wextra:INTERNAL=1
+//Test R-Wformat
+R-Wformat:INTERNAL=1
+//Test R-Wno-long-long
+R-Wno-long-long:INTERNAL=1
+//Test R-Wwrite-strings
+R-Wwrite-strings:INTERNAL=1
+//Test R-pedantic
+R-pedantic:INTERNAL=1
+//Components requested for this build tree.
+_Boost_COMPONENTS_SEARCHED:INTERNAL=filesystem;python;system;unit_test_framework
+//Last used Boost_INCLUDE_DIR value.
+_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/include
+//Last used Boost_LIBRARY_DIR_DEBUG value.
+_Boost_LIBRARY_DIR_DEBUG_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
+//Last used Boost_LIBRARY_DIR_RELEASE value.
+_Boost_LIBRARY_DIR_RELEASE_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
+//Last used Boost_NAMESPACE value.
+_Boost_NAMESPACE_LAST:INTERNAL=boost
+//Last used Boost_USE_MULTITHREADED value.
+_Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
+//Last used Boost_USE_STATIC_LIBS value.
+_Boost_USE_STATIC_LIBS_LAST:INTERNAL=OFF
+//CMAKE_INSTALL_PREFIX during last run
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/opt/openrobots
+_PACKAGE_CONFIG_DEPENDENCIES:INTERNAL=
+_PKG_CONFIG_BINDIR:INTERNAL=/opt/openrobots/bin
+_PKG_CONFIG_CFLAGS:INTERNAL=-I${includedir} -I/usr/include
+_PKG_CONFIG_CFLAGS_DEBUG:INTERNAL=
+_PKG_CONFIG_CFLAGS_OPTIMIZED:INTERNAL=
+_PKG_CONFIG_COMPILE_TIME_REQUIRES:INTERNAL=
+_PKG_CONFIG_CONFLICTS:INTERNAL=
+_PKG_CONFIG_DATAROOTDIR:INTERNAL=/opt/openrobots/share
+_PKG_CONFIG_DESCRIPTION:INTERNAL=Efficient Task Space Inverse Dynamics for Multi-body Systems based on Pinocchio
+_PKG_CONFIG_DIR:INTERNAL=/opt/openrobots/lib/pkgconfig
+_PKG_CONFIG_DOCDIR:INTERNAL=
+_PKG_CONFIG_DOXYGENDOCDIR:INTERNAL=
+_PKG_CONFIG_EXEC_PREFIX:INTERNAL=/opt/openrobots
+_PKG_CONFIG_FILENAME:INTERNAL=tsid.pc
+_PKG_CONFIG_INCLUDEDIR:INTERNAL=/opt/openrobots/include
+_PKG_CONFIG_LIBDIR:INTERNAL=/opt/openrobots/lib
+_PKG_CONFIG_LIBS:INTERNAL= -ltsid
+_PKG_CONFIG_LIBS_DEBUG:INTERNAL=-L${libdir}
+_PKG_CONFIG_LIBS_OPTIMIZED:INTERNAL=-L${libdir}
+_PKG_CONFIG_LIBS_PRIVATE:INTERNAL=
+_PKG_CONFIG_PKGDATAROOTDIR:INTERNAL=/opt/openrobots/share
+_PKG_CONFIG_PKGLIBDIR:INTERNAL=/opt/openrobots/lib/tsid
+_PKG_CONFIG_PREFIX:INTERNAL=/opt/openrobots
+_PKG_CONFIG_PROJECT_NAME:INTERNAL=tsid
+_PKG_CONFIG_REQUIRES:INTERNAL=
+_PKG_CONFIG_REQUIRES_DEBUG:INTERNAL=
+_PKG_CONFIG_REQUIRES_OPTIMIZED:INTERNAL=
+_PKG_CONFIG_URL:INTERNAL=http://github.com/stack-of-tasks/tsid
+_PKG_CONFIG_VERSION:INTERNAL=1.2.0-29-g01cbac-dirty
+__pkg_config_checked_EIGEN3:INTERNAL=1
+__pkg_config_checked_EIGENPY:INTERNAL=1
+__pkg_config_checked_PINOCCHIO:INTERNAL=1
+prefix_result:INTERNAL=/opt/openrobots/lib
 

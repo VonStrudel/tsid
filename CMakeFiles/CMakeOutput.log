@@ -552,3 +552,147 @@ make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Performing C++ SOURCE FILE Test R-pedantic succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_21221/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21221.dir/build.make CMakeFiles/cmTC_21221.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21221.dir/src.cxx.o
+/usr/bin/c++     -DR-pedantic   -pedantic -o CMakeFiles/cmTC_21221.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_21221
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21221.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-pedantic    CMakeFiles/cmTC_21221.dir/src.cxx.o  -o cmTC_21221 -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test R-Wno-long-long succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_159d1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_159d1.dir/build.make CMakeFiles/cmTC_159d1.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_159d1.dir/src.cxx.o
+/usr/bin/c++     -DR-Wno-long-long   -Wno-long-long -o CMakeFiles/cmTC_159d1.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_159d1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_159d1.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-Wno-long-long    CMakeFiles/cmTC_159d1.dir/src.cxx.o  -o cmTC_159d1 -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test R-Wall succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c2966/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c2966.dir/build.make CMakeFiles/cmTC_c2966.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c2966.dir/src.cxx.o
+/usr/bin/c++     -DR-Wall   -Wall -o CMakeFiles/cmTC_c2966.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_c2966
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2966.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-Wall    CMakeFiles/cmTC_c2966.dir/src.cxx.o  -o cmTC_c2966 -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test R-Wextra succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6cbc5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6cbc5.dir/build.make CMakeFiles/cmTC_6cbc5.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6cbc5.dir/src.cxx.o
+/usr/bin/c++     -DR-Wextra   -Wextra -o CMakeFiles/cmTC_6cbc5.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_6cbc5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cbc5.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-Wextra    CMakeFiles/cmTC_6cbc5.dir/src.cxx.o  -o cmTC_6cbc5 -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test R-Wcast-align succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_21877/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21877.dir/build.make CMakeFiles/cmTC_21877.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21877.dir/src.cxx.o
+/usr/bin/c++     -DR-Wcast-align   -Wcast-align -o CMakeFiles/cmTC_21877.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_21877
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21877.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-Wcast-align    CMakeFiles/cmTC_21877.dir/src.cxx.o  -o cmTC_21877 -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test R-Wcast-qual succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_35599/fast"
+/usr/bin/make -f CMakeFiles/cmTC_35599.dir/build.make CMakeFiles/cmTC_35599.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_35599.dir/src.cxx.o
+/usr/bin/c++     -DR-Wcast-qual   -Wcast-qual -o CMakeFiles/cmTC_35599.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_35599
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35599.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-Wcast-qual    CMakeFiles/cmTC_35599.dir/src.cxx.o  -o cmTC_35599 -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test R-Wformat succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dcd12/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dcd12.dir/build.make CMakeFiles/cmTC_dcd12.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dcd12.dir/src.cxx.o
+/usr/bin/c++     -DR-Wformat   -Wformat -o CMakeFiles/cmTC_dcd12.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_dcd12
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcd12.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-Wformat    CMakeFiles/cmTC_dcd12.dir/src.cxx.o  -o cmTC_dcd12 -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test R-Wwrite-strings succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_43b46/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43b46.dir/build.make CMakeFiles/cmTC_43b46.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_43b46.dir/src.cxx.o
+/usr/bin/c++     -DR-Wwrite-strings   -Wwrite-strings -o CMakeFiles/cmTC_43b46.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_43b46
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43b46.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-Wwrite-strings    CMakeFiles/cmTC_43b46.dir/src.cxx.o  -o cmTC_43b46 -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test R-Wconversion succeeded with the following output:
+Change Dir: /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1e93a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1e93a.dir/build.make CMakeFiles/cmTC_1e93a.dir/build
+make[1]: Entering directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1e93a.dir/src.cxx.o
+/usr/bin/c++     -DR-Wconversion   -Wconversion -o CMakeFiles/cmTC_1e93a.dir/src.cxx.o -c /opt/openrobots/src/tsid/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:2: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_1e93a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e93a.dir/link.txt --verbose=1
+/usr/bin/c++    -DR-Wconversion    CMakeFiles/cmTC_1e93a.dir/src.cxx.o  -o cmTC_1e93a -rdynamic 
+make[1]: Leaving directory '/opt/openrobots/src/tsid/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }

@@ -191,9 +191,11 @@ namespace tsid
     //L : wall distance relative to hand
     {
       SE3 frame_position;
-      frame_position = m_robot.position(data, m_frame_id) //coordonnées x,y,z de la frame
-      Vector xyzquat_frame_position = Vector(7);
+      Vector xyzquat_frame_position(7);
+
+      frame_position = m_robot.position(data, m_frame_id); //coordonnées x,y,z de la frame
       SE3ToXYZQUAT(frame_position, xyzquat_frame_position);
+
       return (mxyzquat_frame_position_x[0]*a
         +xyzquat_frame_position[1]*b
         +xyzquat_frame_position[2]*c+d)
@@ -207,6 +209,8 @@ namespace tsid
                                                     ConstRefVector v,
                                                     const Data & data)
     {
+
+      ERREUR FLAGRANTE
       static double prev_t=0;
       static double prev_l=0;
 
@@ -214,7 +218,7 @@ namespace tsid
       //\dot l : speed of hand relative to wall in normal vector direction
       double l, dl;
       Vector lb(1);//define size 1,1
-
+      Vector ub(1);
       //Jl : jacobian of wall distance relative to q
       Matrix Jl;//define size 1 row, nv cols
       Matrix A;//define size 1 row, nv cols
@@ -229,10 +233,10 @@ namespace tsid
       dt = t-prev_t;
       A = Jl;
       lb(0,0) = (2*m_c-l-dt*dl)/(dt*dt);//-dJl*v;
-
-      m_constraint.matrix().row(0) = Jl.row(0);
-      m_constraint.vector().row(0) = lb.row(0);
-
+      ub(0,0) =
+      m_constraint.setMatrix(Jl);
+      m_constraint.setUpperBound(ub);
+      m_constraint.setLowerBound(lb);
       prev_t = t;
       prev_l = l;
 
