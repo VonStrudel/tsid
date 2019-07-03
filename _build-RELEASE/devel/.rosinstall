@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/openrobots/src/tsid/_build-RELEASE/devel/setup.sh

@@ -43,7 +43,6 @@ m = 2
 A = np.matrix(np.ones((m, n)))
 b = np.matrix(np.ones(m)).transpose()
 equality = tsid.ConstraintEquality("equality", A, b)
-
 assert not equality.isBound
 assert equality.isEquality
 assert not equality.isInequality
@@ -73,6 +72,8 @@ m = 2
 A = np.matrix(np.ones((m, n)))
 lb = np.matrix(-np.ones(m)).transpose()
 ub = np.matrix(np.ones(m)).transpose()
+#print("segfault en enlevant ce texte")
+#TODO
 inequality = tsid.ConstraintInequality("inequality", A, lb, ub)
 
 assert not inequality.isBound

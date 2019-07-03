@@ -37,6 +37,7 @@ SET(${LIBRARY_NAME}_TASKS_SOURCES
     tasks/task-joint-posture.cpp
     tasks/task-motion.cpp
     tasks/task-se3-equality.cpp
+    tasks/task-wall.cpp
   )
 
 SET(${LIBRARY_NAME}_CONTACTS_SOURCES
@@ -90,4 +91,3 @@ PKG_CONFIG_USE_DEPENDENCY(${LIBRARY_NAME} eigen3)
 PKG_CONFIG_USE_DEPENDENCY(${LIBRARY_NAME} pinocchio)
 
 INSTALL(TARGETS ${PROJECT_NAME} DESTINATION lib)
-

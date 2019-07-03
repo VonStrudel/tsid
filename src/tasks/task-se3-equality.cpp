@@ -14,7 +14,6 @@
 // tsid If not, see
 // <http://www.gnu.org/licenses/>.
 //
-
 #include "tsid/math/utils.hpp"
 #include "tsid/tasks/task-se3-equality.hpp"
 #include "tsid/robots/robot-wrapper.hpp"

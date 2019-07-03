@@ -35,6 +35,7 @@ Kd = 2*Kp
 contact.setKp(Kp)
 contact.setKd(Kd)
 
+#contact.Kp et contact.Kd semblent pas affectés
 assert np.linalg.norm(contact.Kp - Kp, 2) < tol
 assert np.linalg.norm(contact.Kd - Kd, 2) < tol
 

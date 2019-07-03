@@ -77,7 +77,7 @@ ADD_REQUIRED_DEPENDENCY("eigen3 >= 3.2.0") # Eigen::Ref appeared from 3.2.0
 # Fail-safe support for catkin-ized pinocchio:
 #  - If catkin-based pinocchio is installed it runs the CFG_EXTRAS to set up the Pinocchio preprocessor directives
 #  - If it isn't, nothing happens and the subsequent pkg-config check takes care of everything.
-#find_package(catkin QUIET COMPONENTS pinocchio)
+find_package(catkin QUIET COMPONENTS pinocchio)
 
 ADD_REQUIRED_DEPENDENCY("pinocchio >= 2.0.0")
 
@@ -123,6 +123,7 @@ SET(${PROJECT_NAME}_TASKS_HEADERS
     include/tsid/tasks/task-actuation-bounds.hpp
     include/tsid/tasks/task-joint-bounds.hpp
     include/tsid/tasks/task-joint-posture.hpp
+    include/tsid/tasks/task-wall.hpp
   )
 
 SET(${PROJECT_NAME}_CONTACTS_HEADERS

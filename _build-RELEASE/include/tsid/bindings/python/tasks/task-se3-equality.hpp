@@ -1,0 +1,1 @@
+/opt/openrobots/src/tsid/bindings/python/tasks/task-se3-equality.hpp
