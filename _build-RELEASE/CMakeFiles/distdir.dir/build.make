@@ -58,7 +58,7 @@ include CMakeFiles/distdir.dir/progress.make
 
 CMakeFiles/distdir:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/opt/openrobots/src/tsid/_build-RELEASE/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dist directory..."
-	cd /opt/openrobots/src/tsid && rm -f /tmp/tsid.tar && /opt/openrobots/src/tsid/cmake/git-archive-all.sh --prefix tsid-1.2.0-30-g859b-dirty/ tsid.tar && cd /opt/openrobots/src/tsid/_build-RELEASE/ && ( test -d tsid-1.2.0-30-g859b-dirty && find tsid-1.2.0-30-g859b-dirty/ -type d -print0 | xargs -0 chmod a+w || true ) && rm -rf tsid-1.2.0-30-g859b-dirty/ && /bin/tar xf /opt/openrobots/src/tsid/tsid.tar && echo 1.2.0-30-g859b-dirty > /opt/openrobots/src/tsid/_build-RELEASE/tsid-1.2.0-30-g859b-dirty/.version && /opt/openrobots/src/tsid/cmake/gitlog-to-changelog > /opt/openrobots/src/tsid/_build-RELEASE/tsid-1.2.0-30-g859b-dirty/ChangeLog && rm -f /opt/openrobots/src/tsid/tsid.tar
+	cd /opt/openrobots/src/tsid && rm -f /tmp/tsid.tar && /opt/openrobots/src/tsid/cmake/git-archive-all.sh --prefix tsid-1.2.0-3-gf795-dirty/ tsid.tar && cd /opt/openrobots/src/tsid/_build-RELEASE/ && ( test -d tsid-1.2.0-3-gf795-dirty && find tsid-1.2.0-3-gf795-dirty/ -type d -print0 | xargs -0 chmod a+w || true ) && rm -rf tsid-1.2.0-3-gf795-dirty/ && /bin/tar xf /opt/openrobots/src/tsid/tsid.tar && echo 1.2.0-3-gf795-dirty > /opt/openrobots/src/tsid/_build-RELEASE/tsid-1.2.0-3-gf795-dirty/.version && /opt/openrobots/src/tsid/cmake/gitlog-to-changelog > /opt/openrobots/src/tsid/_build-RELEASE/tsid-1.2.0-3-gf795-dirty/ChangeLog && rm -f /opt/openrobots/src/tsid/tsid.tar
 
 distdir: CMakeFiles/distdir
 distdir: CMakeFiles/distdir.dir/build.make

@@ -26,7 +26,7 @@
 # define TSID_CONFIG_HH
 
 // Package version (header).
-# define TSID_VERSION "1.2.0-30-g859b-dirty"
+# define TSID_VERSION "1.2.0-3-gf795-dirty"
 # define TSID_MAJOR_VERSION 1
 # define TSID_MINOR_VERSION 2
 # define TSID_PATCH_VERSION 0
