@@ -1,1 +1,0 @@
-/opt/openrobots/src/tsid/bindings/python/solvers/HQPData.hpp

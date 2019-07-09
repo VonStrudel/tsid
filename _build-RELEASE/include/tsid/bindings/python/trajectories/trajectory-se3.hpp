@@ -1,1 +1,0 @@
-/opt/openrobots/src/tsid/bindings/python/trajectories/trajectory-se3.hpp
